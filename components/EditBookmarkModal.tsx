@@ -46,7 +46,6 @@ export default function EditBookmarkModal({
       return;
     }
 
-    // @ts-expect-error
     const { error: updateError } = await supabase
       .from('bookmarks')
       .update({
