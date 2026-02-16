@@ -30,6 +30,12 @@ A modern bookmark manager built with Next.js, Supabase, and Tailwind CSS. Featur
 - A Google Cloud account (for OAuth credentials)
 - A Vercel account (for deployment)
 
+
+# Smart Bookmark App
+
+🚀 **Live Demo:** [https://bookmark-seven-dusky.vercel.app](https://bookmark-seven-dusky.vercel.app/)  
+
+
 ## Setup Instructions
 
 ### 1. Clone the Repository
