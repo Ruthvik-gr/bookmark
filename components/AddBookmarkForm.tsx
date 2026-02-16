@@ -25,6 +25,7 @@ export default function AddBookmarkForm() {
     try {
       const { error } = await supabase
         .from('bookmarks')
+        // @ts-expect-error - Supabase type inference issue
         .insert([
           { url, title, user_id: user.id }
         ]);

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Bookmark, Database } from '@/lib/types';
+import { Bookmark } from '@/lib/types';
 import { createClient } from '@/lib/supabase/client';
 import { toast } from 'sonner';
 
@@ -48,6 +48,7 @@ export default function EditBookmarkModal({
 
     const { error: updateError } = await supabase
       .from('bookmarks')
+      // @ts-expect-error - Supabase type inference issue
       .update({
         url: url.trim(),
         title: title.trim(),
